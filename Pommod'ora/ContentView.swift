@@ -10,8 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-    }
+		VStack {
+			Spacer()
+			Image("tomato_1")
+			.resizable()
+				.aspectRatio(contentMode: .fit)
+			Text("Temps").padding()
+			Spacer()
+			Button(action: {
+				// TO DO
+			}) {
+				Text("My button")
+			}
+		}
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
